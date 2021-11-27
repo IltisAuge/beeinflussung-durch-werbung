@@ -1,0 +1,72 @@
+@import 'bootstrap_custom.scss';
+@import 'scrollbar.scss';
+@import '../default_style.scss';
+
+:root {
+  --text-hover-color: #7d34eb;
+  --text-hover-border: #34eb9e;
+  --page-title-color: #75a832;
+  --navbar-bg: rgba(22, 22, 22, .6);
+  --navbar-bg: transparent;
+  --navbar-link-color: #27c0e3;
+  --headline-1-color: #32a8a0;
+  --headline-2-color: #75a832;
+}
+
+body {
+  background-color: $body-bg;
+  color: $body-color;
+}
+
+#page-title {
+  h2 {
+    margin: 0;
+    color: var(--page-title-color);
+  }
+  hr {
+    margin-bottom: 2em;
+  }
+}
+
+.nav-link, .navbar-brand {
+  color: var(--navbar-link-color);
+  opacity: .7;
+}
+
+.nav-link:after {
+  transition: all ease-in-out .3s;
+  background: none repeat scroll 0 0 var(--text-hover-border);
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0;
+}
+
+.navbar a:hover {
+  color: var(--text-hover-color);
+}
+
+.navbar {
+  background: var(--navbar-bg);
+}
+
+.page-content-container {
+  position: relative;
+  margin-top: 3em;
+}
+
+.navbar {
+  border: 1px solid $black;
+  border-top: none;
+  border-radius: 0 0 .5em .5em;
+}
+
+.headline-1 {
+  font-size: 1.5em;
+  color: var(--headline-1-color);
+}
+
+.headline-2 {
+  font-weight: 550;
+  color: var(--headline-2-color);
+}

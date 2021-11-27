@@ -1,0 +1,144 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  justify-content: space-between;
+  height: 99vh;
+}
+
+.themes-list {
+  list-style: none;
+}
+
+.navbar-nav {
+  flex-wrap: wrap;
+  word-break: break-word;
+}
+
+.nav-item {
+  margin: 0 1.5em 0 1.5em;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  margin-right: 0;
+  border-color: white;
+}
+
+.navbar-brand-container {
+  text-align: center;
+  font-size: 0.8em;
+}
+.navbar-brand-container p {
+  margin: 0;
+}
+
+.page-content-container {
+  position: relative;
+  margin-top: 3em;
+}
+.page-content-container a {
+  color: #348ceb;
+}
+
+.navbar {
+  border-top: none;
+  border-radius: 0 0 0.5em 0.5em;
+}
+
+.text-indent-1 {
+  position: relative;
+  left: 2em;
+  margin: 0;
+}
+
+.text-indent-2 {
+  position: relative;
+  left: 4em;
+  margin: 0;
+}
+
+.headline-1 {
+  font-size: 1.5em;
+}
+
+.headline-2 {
+  font-weight: 550;
+}
+
+.text-green {
+  color: #32b85a;
+}
+
+.text-red {
+  color: #db3939;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-yellow {
+  color: #d6d633;
+}
+
+.text-orange {
+  color: #e3aa27;
+}
+
+.text-blue {
+  color: #27c0e3;
+}
+
+#footer {
+  position: relative;
+}
+#footer hr {
+  margin-top: 2em;
+}
+
+.footer-sections-container {
+  justify-content: center;
+  text-align: center;
+  bottom: 0;
+}
+.footer-sections-container p:not(:first-child) {
+  margin: 0;
+}
+
+.footer-section-headline {
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.footer-section {
+  margin: 0 3em 1em 3em;
+}
+
+.theme-selector {
+  margin-right: 2em;
+}
+
+.theme-name:first-child {
+  margin-right: 0.6em;
+}
+
+.theme-name:last-child {
+  margin-left: 0.6em;
+}
+
+@media only screen and (max-width: 991px) {
+  .nav-item {
+    margin: 0 0.3em 0 0.3em;
+  }
+}
+
+/*# sourceMappingURL=default_style.css.map */

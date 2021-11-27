@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <script src="js/functions.js"></script>
+  <script type="text/javascript">
+    detectAndUpdateTheme(document);
+  </script>
+  <head>
+    <meta charset="UTF-8">
+    <title>Personalisierte Werbung</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $("#header").load("navbar.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body onload="onPageLoad();">
+    <div class="container d-flex flex-column">
+      <div id="header"></div>
+      <div class="page-content-container">
+        <div id="page-title" style="opacity: 0;">
+          <h2>Personalisierte Werbung</h2>
+          <hr>
+        </div>
+        <div id="page-body" style="opacity: 0;">
+          <h5 class="headline-1">Was ist das?</h5>
+            <div class="text-indent-1 mb-5">- Auf Benutzer zugeschnittene Werbung im Internet, basierend auf persönlichen Daten, wie dem Alter, Wohnort, Geschlecht und online angegebenen Interssen<br>
+              - Es werden bestimmte Werbeanzeigen geschalten, die den Nutzer interessieren könnten<br>
+              - Man findet diese Art von Werbung auf Webseiten wie Youtube, Amazon, Facebook, GMX, usw., auf Browserstartseiten und in Social Media Apps, wie Instagram, Facebook, ...
+            </div>
+          <h5 class="headline-1">Funktionsweise:</h5>
+            <div class="text-indent-1 mb-5">- Durch Cookies auf Webseiten, Browser- und Geräteidentifizierung<br>
+              - Ein Cookie ist ein Key-Value-Pair, das für eine Webseite im Browser gespeichert wird.<br>
+                Das heißt, dass ein Cookie einen Namen (Key) hat und eine Textinformation (Value) enthält.<br>
+                Beim Aufrufen einer Website werden die Cookies, die für diese Website gespeichert wurden, an den Webserver gesendet.<br>
+                Somit kann beispielsweise Werbung für Produkte angezeigt werden, die man zuvor in den Warenkorb gelegt hat.
+            </div>
+          <h5 class="headline-1">Vorteile:</h5>
+            <div class="text-indent-1 mb-5">- Benutzer finden schnell Produkte, die sie interessant finden oder ihnen gefallen<br>
+              - Erinnert Nutzer immer wieder an vorherige Suchen<br>
+              - Unpassende und eher unerwünschte Werbungen werden nicht angezeigt, somit werden Benutzer nicht "genervt".<br>
+              - Es entsteht eine stärkere Bindung zwischen dem Nutzer und der Markte, von der Werbung gezeigt wird.
+            </div>
+          <h5 class="headline-1">Nachteile:</h5>
+            <div class="text-indent-1 mb-5">- Für die Werbetreibenden ist es mit viel Aufwand und Geld verbunden, um die Werbungen zu aktualisieren.<br>
+              Dies gilt jedoch auch für nicht personalisierte Werbung.<br>
+              - Datenschutz möglicherweise gefährdet.<br>
+              Laut einer <a href="https://de.statista.com/statistik/daten/studie/986552/umfrage/einstellung-gegenueber-personalisierter-werbung-in-deutschland/">Umfrage von Statistika aus dem Jahr 2018</a> haben 76% der 1000 Befragten Personen Furcht vor Datenmissbrauch durch personalisierte Werbung.<br>
+              - Google sammelt Daten über die Suchaktivitäten, um Werbung zu personalisieren.<br>
+              (Umfrage: L. Rabe in "Statistika", Seite "Welche Einstellung haben Sie gegenüber personalisierter Werbung?". Veröffentlicht am 10.11.2021. Abgerufen am 27.11.2021 18:46 UTC+1)
+              - Diese Werbeform kann beispielsweise durch politische Parteien genutzt werden, um eine bestimmte Zielgruppe auf sich aufmerksam zu machen.
+            </div>
+          <h5 class="headline-1">Arten:</h5>
+			      <div class="text-indent-1 mb-5"><a href="https://clicks.digital/blog/personalisierte-werbung-vor-und-nachteile-fuer-ihr-unternehmen" target="_blank">Quelle</a> (Skadi Richter: In "clicks digital", Seite "Personalisierte Werbung: Vor- und Nachteile für Ihr Unternehmen". Veröffentlicht am 05.04.2018. Abgerufen: 12.11.2021)<br>
+              - Content-Targeting: Werbungen werden nur auf Webseiten mit dem gleichen Inhalt angezeigt.<br>
+              - Semantisches Targeting: Werbungen werden nur auf Webseiten mit ähnlichem Inhalt angezeigt.<br>
+              - Behavioral-Targeting: Werbungen werden auf Webseiten, egal mit welchem Inhalt angezeigt. Die Anzeigen werden aufgrund des Surf-Verhaltens gewählt.<br>
+              - Retargeting: Nutzern, die beispielsweise ein Produkt in den Warenkorb gelegt aber nicht gekauft haben, wird gezielt Werbung für diese Produktart angezeigt.<br>
+              - Social-Media-Targeting: In Social Medias werden Werbungen gezeigt, deren Thema den gelikten Beiträgen entspricht.<br>
+              - Psychografisches Targeting: Werbungen werden auf Grund des Verhaltens des Nutzers geschalten. Beispielsweise, wenn ein Nutzer günstige Produkte bevorzugt, werden ihm günstige vorgeschlagen.
+            </div>
+          <h5 class="headline-1">Beeinflussung:</h5>
+            <div class="text-indent-1">Die Beeinflussung findet statt, indem den Nutzern bestimmte Produkte vorschlagen werden, die sie sich als letztes angesehen haben oder sie interessiert.
+            Man wird schneller auf die Werbung aufmerksam und wird dazu verlockt, sich näher mit dem Produkt zu beschäftigen und somit auch zu kaufen.
+            Wenn hingegen Werbung angezeigt wird, für die man sich nicht interessiert, ist sie eher nervig und lästig.<br>
+            Laut der oben genannten <a href="https://de.statista.com/statistik/daten/studie/986552/umfrage/einstellung-gegenueber-personalisierter-werbung-in-deutschland/">Umfrage</a> werden 25% der Befragten durch personalisierte Werbung eher zum Kauf verleitet.
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

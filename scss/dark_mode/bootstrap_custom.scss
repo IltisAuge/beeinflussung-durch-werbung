@@ -1,0 +1,13 @@
+// Required
+@import "../../node_modules/bootstrap/scss/functions";
+
+// Default variable overrides
+$body-bg: rgba(22, 22, 22, 0.98);
+$body-color: rgba(255, 255, 255, 0.9);
+// $body-bg: rgba(245, 245, 245, 1);
+// $body-color: rgba(22, 22, 22, 0.98);
+$primary: #212121;
+$secondary: #303030;
+
+// Required
+@import "../../node_modules/bootstrap/scss/bootstrap";
