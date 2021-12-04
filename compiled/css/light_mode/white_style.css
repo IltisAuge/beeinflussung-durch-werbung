@@ -22335,6 +22335,7 @@ body {
 
 .headline-2 {
   font-weight: 550;
+  margin-top: 1em;
 }
 
 .text-green {
@@ -22396,6 +22397,11 @@ body {
 
 .theme-name:last-child {
   margin-left: 0.6em;
+}
+
+#img-container {
+  flex-direction: row;
+  flex-flow: row;
 }
 
 @media only screen and (max-width: 991px) {

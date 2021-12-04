@@ -22335,6 +22335,7 @@ body {
 
 .headline-2 {
   font-weight: 550;
+  margin-top: 1em;
 }
 
 .text-green {
@@ -22396,6 +22397,11 @@ body {
 
 .theme-name:last-child {
   margin-left: 0.6em;
+}
+
+#img-container {
+  flex-direction: row;
+  flex-flow: row;
 }
 
 @media only screen and (max-width: 991px) {
@@ -22470,7 +22476,6 @@ body {
   color: var(--headline-2-color);
 }
 
-/* The switch - the box around the slider */
 .switch {
   position: relative;
   display: inline-block;
@@ -22478,14 +22483,12 @@ body {
   height: 1em;
 }
 
-/* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* The slider */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -22496,6 +22499,7 @@ body {
   background-color: #ccc;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  border-radius: 1.5em;
 }
 
 .slider:before {
@@ -22508,6 +22512,7 @@ body {
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  border-radius: 50%;
 }
 
 input:checked + .slider {
@@ -22522,15 +22527,6 @@ input:checked + .slider:before {
   -webkit-transform: translateX(1em);
   -ms-transform: translateX(1em);
   transform: translateX(1em);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 1.5em;
-}
-
-.slider.round:before {
-  border-radius: 50%;
 }
 
 /*# sourceMappingURL=index.css.map */

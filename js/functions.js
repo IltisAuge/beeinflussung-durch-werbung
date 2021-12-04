@@ -39,7 +39,7 @@ function detectAndUpdateTheme(document) {
   console.log("Found theme cookie:" + theme);
   let isUsingDarkmode = window.matchMedia('(prefers-color-scheme: dark)').matches;
   console.log("isUsingDarkmode=" + isUsingDarkmode);
-  theme = isUsingDarkmode && (theme == null || theme == "dark") ? "dark" : "light";
+  theme = (theme != null && theme == "dark") || (theme == null && isUsingDarkmode) ? "dark" : "light";
   console.log("Theme=" + theme);
   setThemeStylesheet(document, theme);
   detectedTheme = theme;
