@@ -38,7 +38,6 @@ function detectAndUpdateTheme(document) {
   let theme = getCookie('theme');
   console.log("Found theme cookie:" + theme);
   let isUsingDarkmode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  console.log("isUsingDarkmode=" + isUsingDarkmode);
   theme = (theme != null && theme == "dark") || (theme == null && isUsingDarkmode) ? "dark" : "light";
   console.log("Theme=" + theme);
   setThemeStylesheet(document, theme);
@@ -63,4 +62,14 @@ function getCookie(name) {
   const value = `; ${document.cookie}`;
   const parts = value.split(`; ${name}=`);
   if (parts.length === 2) return parts.pop().split(';').shift();
+}
+
+function addIframe(url) {
+  $(window).load(function() {
+    var f = document.createElement('iframe');
+    f.src = url;
+    f.width = 1000;
+    f.height = 500;
+    $('body').append(f);
+  });
 }

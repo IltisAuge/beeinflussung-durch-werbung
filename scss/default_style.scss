@@ -44,9 +44,10 @@ body {
 .page-content-container {
   position: relative;
   margin-top: 3em;
-  a {
-    color: #348ceb;
-  }
+}
+
+.link {
+  color: #348ceb;
 }
 
 .navbar {
@@ -142,6 +143,10 @@ body {
 }
 
 @media only screen and (max-width: 991px) {
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+  }
   .nav-item {
     margin: 0 .3em 0 .3em;
   }
