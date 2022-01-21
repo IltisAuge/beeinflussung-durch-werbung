@@ -22313,6 +22313,10 @@ body {
   color: #348ceb;
 }
 
+.link:hover {
+  color: #2466ad;
+}
+
 .navbar {
   border-top: none;
   border-radius: 0 0 0.5em 0.5em;
@@ -22345,10 +22349,6 @@ body {
 
 .text-red {
   color: #db3939;
-}
-
-.text-white {
-  color: white;
 }
 
 .text-yellow {
@@ -22480,6 +22480,10 @@ body {
 .headline-2 {
   font-weight: 550;
   color: var(--headline-2-color);
+}
+
+.text-white {
+  color: black !important;
 }
 
 .switch {
